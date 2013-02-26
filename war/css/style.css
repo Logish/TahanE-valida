@@ -1,0 +1,118 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+body {
+	background-color: lightblue;
+}
+
+div#päis {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	height: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-bottom: 5px solid white;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+div#meldi {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+div#navigatsioon {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 105px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+div#tabel {
+	height: 50px;
+	display: table;
+	margin: 0 auto;
+}
+
+div.keskmine {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 170px;
+	width: 500px;
+	height: 450px;
+	background-color: white;
+}
+
+div#uudised {
+	overflow: scroll;
+}
+
+#navigatsioon ul {
+	height: 50px;
+	vertical-align: middle;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#navigatsioon li {
+	display: inline;
+	float: left;
+	line-height: 43px;
+	width: 200px;
+}
+
+#navigatsioon p {
+	display: block;
+	height: 50px;
+	width: 120px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#navigatsioon a:link,a:visited {
+	-webkit-transition-property: padding, border;
+	-webkit-transition-duration: 0.4s, 0.2s;
+	display: block;
+	height: 50px;
+	width: 120px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#navigatsioon a:hover,a:active {
+	background-color: blue;
+	padding-top: 15px;
+}
+
+#päis h1 {
+	font-family: cursive;
+	border-left: 3px solid white;
+}
