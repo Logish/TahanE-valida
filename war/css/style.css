@@ -125,6 +125,21 @@ div#uudised {
 	height:150px;
 	width:auto;
 	border:1px solid #ccc;
-	font:16px/26px Georgia,Garamond, Serif;
+	font:16px/26px Arial, Helvetica, sans-serif;
 	overflow:auto;
+}
+.scrollbox2 {
+	height:350px;
+	width:auto;
+	border:1px solid #ccc;
+	font:16px/26px Arial, Helvetica, sans-serif;
+	overflow:auto;
+}
+
+.align-left {
+	height:100px;
+	float:left; 
+	border:1; 
+	margin: 15px 15px 15px 15px;
+	
 }
