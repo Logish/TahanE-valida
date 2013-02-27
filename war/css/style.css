@@ -50,14 +50,17 @@ div#tabel {
 
 div.keskmine {
 	position: absolute;
-	left: 0px;
+	left: 156px;
 	right: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	top: 170px;
+	top: 192px;
 	width: 500px;
 	height: 450px;
 	background-color: white;
+	font-size:8px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 div#uudised {
@@ -115,4 +118,13 @@ div#uudised {
 #päis h1 {
 	font-family: cursive;
 	border-left: 3px solid white;
+
+}
+
+.scrollbox{
+	height:150px;
+	width:auto;
+	border:1px solid #ccc;
+	font:16px/26px Georgia,Garamond, Serif;
+	overflow:auto;
 }
