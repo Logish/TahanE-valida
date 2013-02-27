@@ -135,6 +135,14 @@ div#uudised {
 	font:16px/26px Arial, Helvetica, sans-serif;
 	overflow:auto;
 }
+.scrollbox3 {
+	height:350px;
+	width:auto;
+	border:1px solid #ccc;
+	font:16px/26px Arial, Helvetica, sans-serif;
+	overflow:auto;
+	
+}
 
 .align-left {
 	height:100px;
