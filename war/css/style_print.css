@@ -1,23 +1,26 @@
 @CHARSET "UTF-8";
 
 
-.päis {
+div#päis {
 	display: none;
 }
 
-.navigatsioon {
+div#meldi {
 	display: none;
 }
 
-.menu {
+#päis h1 {
 	display: none;
 }
 
-.inline {
-	display: inline;
+div#navigatsioon {
+	display: none;
 }
 
+div#menu {
+	display: none;
+}
 
-.footer {
+div#inline {
 	display: none;
 }
