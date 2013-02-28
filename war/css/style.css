@@ -156,12 +156,12 @@ div#uudised {
 
 }
 .fConnectButton {
-	background-image: url(../war/img/facebook.jpg);
+	background-image: url(../img/facebook.jpg);
 	width: 200px;
 	height: 49px;
 }
 .IDkaartButton {
-	background-image: url(../war/img/idkaart.png);
+	background-image: url(../img/idkaart.png);
 	width: 200px;
 	height: 49px;
 }
