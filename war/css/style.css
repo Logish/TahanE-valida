@@ -98,8 +98,8 @@ div#uudised {
 }
 
 #navigatsioon a:link,a:visited {
-	-webkit-transition-property: padding, border;
-	-webkit-transition-duration: 0.4s, 0.2s;
+	-webkit-transition-property: padding;
+	-webkit-transition-duration: 0.4s;
 	display: block;
 	height: 50px;
 	width: 120px;
@@ -119,7 +119,6 @@ div#uudised {
 #päis h1 {
 	font-family: cursive;
 	border-left: 3px solid white;
-
 }
 
 .scrollbox{
@@ -129,6 +128,7 @@ div#uudised {
 	font:16px/26px Arial, Helvetica, sans-serif;
 	overflow:auto;
 }
+
 .scrollbox2 {
 	height:350px;
 	width:auto;
