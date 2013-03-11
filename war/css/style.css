@@ -1,167 +1,279 @@
-@CHARSET "ISO-8859-1";
-
-html {
-	min-height: 100%;
-	min-width: 100%;
-}
-
 body {
-	background-color: lightblue;
+	background-color: black;
 }
 
-div#päis {
+div.pealkirjaPaneel {
 	position: absolute;
-	left: 0px;
-	right: 0px;
 	top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 950px;
+	width: 1000px;
 	height: 100px;
-	padding-left: 25px;
-	padding-right: 25px;
-	border-bottom: 5px solid white;
-	vertical-align: middle;
-	line-height: 50px;
+	left: 50%;
+	margin-left: -500px;
+	font-size: 200%;
+	color: white;
 }
 
-div#meldi {
-	position: absolute;
-	top: 25px;
-	right: 25px;
-}
-
-div#navigatsioon {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 105px;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-div#tabel {
-	height: 50px;
-	display: table;
-	margin: 0 auto;
-}
-
-div.keskmine {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	top: 192px;
-	width: 500px;
-	height: 450px;
-	background-color: white;
-	font-size:8px;
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: center;
-}
-
-div#uudised {
-	overflow: scroll;
-}
-
-#navigatsioon ul {
-	height: 50px;
-	vertical-align: middle;
-	list-style-type: none;
+div.peaPaneel {
 	overflow: hidden;
-	margin: 0;
-	padding: 0;
+	position: absolute;
+	left: 50%;
+	width: 1000px;
+	margin-left: -500px;
+	height: 600px;
+	border-top: solid;
+	border-color: white;
+}
+
+div.peaPaneel.Nahtaval {
+	top: 100px;
+	opacity: 1;
+}
+
+div.peaPaneel.All {
+	top: 400px;
+	opacity: 0;
+}
+
+div.peaPaneel.uleval {
+	top: -200px;
+	opacity: 0;
+}
+
+div.navigatsioon {
+	width: 250px;
+}
+
+div.navigatsioon.nupp {
+	-webkit-transition-property: padding, border, font-size;
+	-webkit-transition-duration: 0.4s, 0.2s, 0.6s;
+	z-index: 2;
+	position: absolute;
+	height: 35px;
+	color: white;
+	padding-top: 3px;
 	text-align: center;
 }
 
-#navigatsioon li {
-	display: inline;
-	float: left;
-	line-height: 43px;
-	width: 200px;
-}
-
-#navigatsioon p {
-	display: block;
-	height: 50px;
-	width: 120px;
-	font-weight: bold;
-	color: #000000;
-	text-align: center;
-	padding: 4px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-#navigatsioon a:link,a:visited {
-	-webkit-transition-property: padding;
-	-webkit-transition-duration: 0.4s;
-	display: block;
-	height: 50px;
-	width: 120px;
-	font-weight: bold;
-	color: #000000;
-	text-align: center;
-	padding: 4px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-#navigatsioon a:hover,a:active {
-	background-color: blue;
+div.navigatsioon.nupp:hover {
 	padding-top: 15px;
+	border-bottom: solid;
+	border-color: white;
 }
 
-#päis h1 {
-	font-family: cursive;
-	border-left: 3px solid white;
+div.navigatsioon.nupp.aktiivne {
+	padding-top: 15px;
+	font-size: 130%;
 }
 
-.scrollbox{
-	height:150px;
-	width:auto;
-	border:1px solid #ccc;
-	font:16px/26px Arial, Helvetica, sans-serif;
-	overflow:auto;
+div.navigatsioon.uudised {
+	left: 0px;
 }
 
-.scrollbox2 {
-	height:350px;
-	width:auto;
-	border:1px solid #ccc;
-	font:16px/26px Arial, Helvetica, sans-serif;
-	overflow:auto;
+div.navigatsioon.kandidaadid {
+	left: 250px;
 }
-.scrollbox3 {
-	height:350px;
-	width:auto;
-	border:1px solid #ccc;
-	font:16px/26px Arial, Helvetica, sans-serif;
-	overflow:auto;
+
+div.navigatsioon.tulemused {
+	left: 500px;
+}
+
+div.navigatsioon.statistika {
+	left: 750px;
+}
+
+div.navigatsioon.indikaator {
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.6s; z-index : 1;
+	position: absolute;
+	height: 50px;
+	border-bottom: solid;
+	border-color: white;
+	opacity: 0.6;
+	background-color: #004872;
+	z-index: 1;
+}
+
+div.valikutePohipaneel {
+	-webkit-transition-property: left, background;
+	-webkit-transition-duration: 0.6s;
+	position: absolute;
+	top: 50px;
+	width: 4000px;
+	color: white;
+	height: 550px;
+}
+
+div.valikutePohipaneel.uudised {
+	left: 0px;
+	background-color: red;
+}
+
+div.valikutePohipaneel.kandidaadid {
+	left: -1000px;
+	background-color: yellow;
+}
+
+div.valikutePohipaneel.tulemused {
+	left: -2000px;
+	background-color: blue;
+}
+
+div.valikutePohipaneel.statistika {
+	left: -3000px;
+	background-color: green;
+}
+
+div.valikutePaneel {
+	position: absolute;
+	width: 1000px;
+	height: 550px;
+	padding: 20px;
+}
+
+div.valikutepaneel.uudised {
+	left: 0px;
+}
+
+div.valikutePaneel.kandidaadid {
+	left: 1000px;
+}
+
+div.valikutepaneel.tulemused {
+	left: 2000px;
+}
+
+div.valikutePaneel.statistika {
+	left: 3000px;
+}
+
+div.tabeliRida {
+	position: static;
+	margin-top: 5px;
+	width: 1000px;
+	height: 30px;
+	left: 0px;
+}
+
+div.tabeliRida.pais {
+	height: 40px;
+}
+
+div.tabelireaTaust {
+	-webkit-transition-property: opacity, background;
+	-webkit-transition-duration: 0.35s;
+	width: 1000px;
+	height: 30px;
+	position: absolute;
+	background: grey;
+	opacity: 0.2;
+}
+
+div.tabelireaTaust.hiirPeal {
+	opacity: 0.5;
+	background: #0063d0;
+}
+
+div.tabelireaTaust.pais {
+	color: white;
+	opacity: 0.4;
+	height: 40px;
+}
+
+div.tabelikirjad {
+	position: absolute;
+	width: 1000px;
+	height: 30px;
+}
+
+div.tabeliKiri {
+	padding-top: 2px;
+	position: absolute;
+	height: 28px;
+}
+
+div.tabeliKiri.pais {
+	-webkit-transition-property: height border;
+	-webkit-transition-duration: 0.35s; font-size : 125%;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	font-size: 125%;
+}
+
+div.tabeliKiri.pais:hover {
+	padding-top: 0px;
+	height: 40px;
+}
+
+div.tabeliKiri.nimi {
+	padding-left: 50px;
+	left: 0px;
+}
+
+div.tabeliKiri.erakond {
+	padding-left: 50px;
+	left: 333px;
+	border-left: 1px solid white;
+}
+
+div.tabeliKiri.piirkond {
+	padding-left: 50px;
+	left: 666px;
+	border-left: 1px solid white;
+}
+
+select.statistikavalik {
+	left: 50px;
+}
+
+div.statistikaPohipaneel {
+	-webkit-transition-property: left;
+	-webkit-transition-duration: 0.6s;
+	position: absolute;
+	top: 50px;
+	width: 4000px;
+	height: 450px;
 	
 }
 
-.align-left {
-	height:100px;
-	float:left; 
-	border:1; 
-	margin: 15px 15px 15px 15px;
-	
+div.statistikaPohipaneel.riik {
+	left: 0px;
 }
-.align-center {
 
+div.statistikaPohipaneel.piirkond {
+	left: -1000px;
 }
-.fConnectButton {
-	background-image: url(../img/facebook.jpg);
-	width: 200px;
-	height: 49px;
+
+div.statistikaPohipaneel.partei {
+	left: -2000px;
 }
-.IDkaartButton {
-	background-image: url(../img/idkaart.png);
-	width: 200px;
-	height: 49px;
+
+div.statistikaPohipaneel.kandidaat {
+	left: -3000px;
+}
+
+div.statistikapaneel {
+	position: absolute;
+	width: 900px;
+	height: 400px;
+	padding: 20px;
+	margin: 20px;
+	background-color: purple;
+	color: black;
+	overflow: hidden;
+}
+
+div.statistikapaneel.riik {
+	left: 0px;
+}
+
+div.statistikapaneel.piirkond {
+	left: 1000px;
+}
+
+div.statistikapaneel.partei {
+	left: 2000px;
+}
+
+div.statistikapaneel.kandidaat {
+	left: 3000px;
 }

@@ -1,49 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/style_print.css"
-	media="print">
-<script type="text/javascript" src="../js/skcipt.js"></script>
-<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
-<title>Tahan e-valida - Pealeht</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>E-valimine</title>
+<link rel="stylesheet" href="../war/css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../war/css/style_print.css" type="text/css">
+<link rel="stylesheet" href="../css/style_print.css" type="text/css">
+<script type="text/javascript" src='../war/js/script.js'></script>
+<script type="text/javascript" src='../js/script.js'></script>
+<script type="text/javascript" src='../war/js/jquery-1.9.1.js'></script>
+<script type="text/javascript" src='../js/jquery-1.9.1.js'></script>
 </head>
 
-<body>
+<body onload='lehtLaetud()'>
+	<div class="pealkirjaPaneel">Tahan e-valida</div>
 
-	<div id="päis">
-		<h1>&nbsp;Tahan e-valida</h1>
-		<div id="meldi">
-			<a href="login.html">Meldi sisse</a>
+	<div id="valikud" class='peaPaneel'>
+		<div id="navigatsioon">
+			<div class="navigatsioon nupp uudised"
+				onclick="aktiveeriValikuteVaade('uudised')">Uudised</div>
+			<div class="navigatsioon nupp kandidaadid"
+				onclick="aktiveeriValikuteVaade('kandidaadid')">Kandidaadid</div>
+			<div class="navigatsioon nupp tulemused"
+				onclick="aktiveeriValikuteVaade('tulemused')">Tulemused</div>
+			<div class="navigatsioon nupp statistika"
+				onclick="aktiveeriValikuteVaade('statistika')">Statistika</div>
+			<div class="navigatsioon indikaator">
 		</div>
 	</div>
 
-	<div id="navigatsioon">
-		<div id="tabel">
-			<ul>
-				<li><a href="pealeht.html">Pealeht</a></li>
-				<li><a href="kandidaadid.html">Kandidaadid</a></li>
-				<li><a href="tulemused.html">Tulemused</a></li>
-				<li><a href="statistikariigis.html">Statistika</a></li>
-			</ul>
+		<div class="valikutePohipaneel">
+			<div id="uudised" class="valikutePaneel uudised">
+				KÃ¼la Ants lisas ennast Keskerakonna kandidaadiks. Lubas igale
+				valijale liitri piima. HÃ¤Ã¤leta Antsu poolt. <br> ---- <br>
+				IRL vÃµidutseb Tallinnas, Keskerakond kolkakÃ¼las.Statistika<br>
+				---- <br> Valimised on alanud. HÃ¤Ã¤leta enda lemmiku poolt juba
+				tÃ¤na.
+			</div>
+			<div id="kandidaadid" class="valikutePaneel kandidaadid">
+				<div class="tabeliRida pais">
+					<div class="tabelireaTaust pais"></div>
+					<div class="tabelikirjad">
+						<div class="tabeliKiri nimi pais">Nimi</div>
+						<div class="tabeliKiri erakond pais">Erakond</div>
+						<div class="tabeliKiri piirkond pais">Piirkond</div>
+					</div>
+				</div>
+			</div>
+			<div id="tulemused" class="valikutePaneel tulemused"></div>
+			<div id="statistika" class="valikutePaneel statistika">
+				<select id="statistikavalik" class="statistikavalik"
+					onchange="aktiveeriStatistikavaade(this)">
+					<option value="riik">Riik</option>
+					<option value="piirkond">Piirkond</option>
+					<option value="partei">Partei</option>
+					<option value="kandidaat">Kandidaat</option>
+				</select>
+				<div class="statistikaPohipaneel">
+					<div id="riik" class="statistikapaneel riik">Riik</div>
+					<div id="piirkond" class="statistikapaneel piirkond">Piirkond</div>
+					<div id="partei" class="statistikapaneel partei">Partei</div>
+					<div id="kandidaat" class="statistikapaneel kandidaat">Kandidaat</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<div class="keskmine" id="uudised">
-		<h1>Uudised</h1>
-		<div class="scrollbox2">
-			<tr>
-				<td><img src="../img/Ants.png" alt="Ants" class="align-left" />
-					<br> Küla Ants lisas ennast Keskerakonna kandidaadiks. Lubas
-					igale valijale liitri piima. Hääleta Antsu poolt. <br> <br>
-					---- <br> IRL võidutseb Tallinnas, Keskerakond kolkakülas.
-					Uuri lähemalt : <a href="statistika.html">Statistika</a> <br>
-					---- <br> Valimised on alanud. Hääleta enda lemmiku poolt juba
-					täna. Selleks <a href="login.html">Meldi sisse</a> <br></td>
-			</tr>
-		</div>
 </body>
-
 </html>
