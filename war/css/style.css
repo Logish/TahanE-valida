@@ -3,7 +3,6 @@ body {
 }
 
 div.pealkirjaPaneel {
-	display: table;
 	position: absolute;
 	top: 0px;
 	width: 1000px;
@@ -12,19 +11,67 @@ div.pealkirjaPaneel {
 	margin-left: -500px;
 	font-size: 200%;
 	color: white;
-	vertical-align: middle;
+	overflow: hidden;
 }
 
-div.nupp {
+div#pealkiri {
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+
+div.login.pais {
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.6s;
+	position: absolute;
+	right: 0px;
+	width: 500px;
+	height: 200px;
+}
+
+div.login.pais.valjas {
+	top: 0px;
+}
+
+div.login.pais.sees {
+	height: 100px;
+	top: -100px;
+}
+
+div.loginPais.valjas {
+	width: 500px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-color: orange;
+	height: 100px;
+}
+
+div.loginPais.sees {
+	width: 500px;
+	position: absolute;
+	right: 0px;
+	top: 100px;
+	background-color: brown;
+	height: 100px;
+}
+
+div.logNupp {
 	position: absolute;	
+	right: 30px;
+	top: 30px;
 	width: 80px;
 	height: 32px;
+	float: right;
 }
 
 div#loginNupp {
 	background-image: url("../img/login.png");
-	right: 35px;
-	top: 35px;
+	float: right;
+}
+
+div#logoutNupp {
+	background-image: url("../img/logout.png");
 	float: right;
 }
 
@@ -37,22 +84,6 @@ div#loginInfo {
 	height: 50px;
 	background-color: white;
 }
-
-div#logoutNupp {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: brown;
-	left: 10px;
-	top: 10px;
-}
-
-div#pealkiri {
-	width: 500px;
-	height: 100px;
-	float: left;
-}
-
 
 div.peaPaneel {
     -webkit-transition-property: top, -webkit-transform, opacity;
@@ -322,6 +353,12 @@ div.statistikapaneel.kandidaat {
 	left: 3000px;
 }
 
+div#kandideeri {
+	background-color: lightblue;
+	text-align: center;
+	font-size: 150%;
+}
+
 div#login {
 	background-color: lightblue;
 	text-align: center;
@@ -337,7 +374,7 @@ div.login.voimalused {
 	background-color: white;
 }
 
-div.nupp.tuup {
+div.logNupp.tuup {
 	left: 200px;
 	width: 100px;
 	height: 50px;
@@ -345,14 +382,14 @@ div.nupp.tuup {
 	background-color: blue;
 }
 
-div.nupp.tuup.idkaart {
+div.logNupp.tuup.idkaart {
 	top: 50px;
 }
 
-div.nupp.tuup.gmail {
+div.logNupp.tuup.gmail {
 	top: 150px;
 }
 
-div.nupp.tuup.facebook {
+div.logNupp.tuup.facebook {
 	top: 250px;
 }

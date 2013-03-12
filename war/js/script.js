@@ -3,25 +3,47 @@ var sisseLogitud = false;
 function logi(viis) {
 	if (viis == 'naita') {
 		if (document.getElementById("login").className == 'peaPaneel All') {
-			$('#login').toggleClass('All Nahtaval');
+			$('#login, #kandideeri').toggleClass('All Nahtaval');
 			$('#valikud').toggleClass('uleval Nahtaval');
 		}
 	} else if (viis == 'valja'){
-		$('#loginInfo').hide();
-		$('#loginNupp').show();
+		muudaLoginStaatust();
 		aktiveeriValikuteVaade('uudised');
+		if (document.getElementById("login").className == 'peaPaneel Nahtaval') {
+			$('#login, #kandideeri').toggleClass('All Nahtaval');
+			$('#valikud').toggleClass('uleval Nahtaval');
+		}
+		
 	} else {
-		sisseLogitud = true;
-		$('#login').toggleClass('All Nahtaval');
+		$('#login, #kandideeri').toggleClass('All Nahtaval');
 		$('#valikud').toggleClass('uleval Nahtaval');
-		$('#loginNupp').hide();
-		$('#loginInfo').show();		
+		muudaLoginStaatust();		
 	}  
 }
 
+function kandideeri() {
+	if (document.getElementById("kandideeri").className == 'peaPaneel All') {
+		$('#login, #kandideeri').toggleClass('All Nahtaval');
+		$('#valikud').toggleClass('uleval Nahtaval');
+	}
+}
+
+function muudaLoginStaatust() {
+	if (sisseLogitud = true) {
+		sisseLogitud = false;
+		$('.login.pais').toggleClass('sees valjas')
+		$('#login, #kandideeri').toggle();
+	} else {
+		sisseLogitud = true;
+		$('.loginPais').toggleClass('sees valjas')
+		$('#login, #kandideeri').toggle();		
+	}
+}
+
 function lehtLaetud() {
-	$('#loginInfo').hide();
-	$('#login').addClass('All');
+	$('.login.pais').addClass('valjas')
+	$('#kandideeri').hide();
+	$('#login, #kandideeri').addClass('All');
 	$('#valikud').addClass('Nahtaval');
 	aktiveeriValikuteVaade('uudised');
 }

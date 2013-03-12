@@ -18,10 +18,16 @@
 <body onload='lehtLaetud()'>
 	<div class="pealkirjaPaneel">
 		<div id="pealkiri">Tahan e-valida</div>
-		<div id="loginNupp" class="nupp" onclick="logi('naita')"></div>
-		<div id="loginInfo">
-			<div id="userInfo"></div>
-			<div id="logoutNupp" class="nupp" onclick="logi('valja')"></div>
+
+		<div class="login pais">
+			<div class="loginPais sees">
+				<div id="userInfo"></div>
+				<div id="logoutNupp" class="logNupp" onclick="logi('valja')"></div>
+				<button onClick="kandideeri()">Kandideeri</button>
+			</div>
+			<div class="loginPais valjas">
+				<div id="loginNupp" class="logNupp" onclick="logi('naita')"></div>
+			</div>
 		</div>
 	</div>
 
@@ -77,10 +83,18 @@
 	<div id="login" class="peaPaneel">
 		Logige sisse kasutades ühte järgmistest võimalustest
 		<div class="login voimalused">
-			<div class="nupp tuup idkaart" onclick="logi('idkaart')">ID-kaart</div>
-			<div class="nupp tuup gmail" onclick="logi('gmail')">Gmail</div>
-			<div class="nupp tuup facebook" onclick="logi('facebook')">Facebook</div>
+			<div class="logNupp tuup idkaart" onclick="logi('idkaart')">ID-kaart</div>
+			<div class="logNupp tuup gmail" onclick="logi('gmail')">Gmail</div>
+			<div class="logNupp tuup facebook" onclick="logi('facebook')">Facebook</div>
 		</div>
+	</div>
+	<div id="kandideeri" class="peaPaneel">
+		<form>
+			Eesnimi: <input type="text" name="eesnimi"><br>
+			Perekonnanimi: <input type="text" name="perekonnanimi"><br>
+			Piirkond: <input type="text" name="piirkond"><br>
+			Erakond: <input type="text" name="erakond"><br>
+		</form>
 	</div>
 </body>
 </html>
