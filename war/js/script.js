@@ -1,5 +1,6 @@
 function lehtLaetud() {
-	$('#valikud').addClass('Nahtaval');
+	$('#login').addClass('Nahtaval');
+	$('#valikud').addClass('uleval');
 	aktiveeriValikuteVaade('uudised');
 }
 
@@ -16,6 +17,11 @@ function aktiveeriValikuteVaade(nimi) {
 	else if (nimi == 'statistika') {
 		laestatistika();
 	}
+}
+
+function muudaVaadet() {
+    $('#login').toggleClass('All Nahtaval');
+    $('#valikud').toggleClass('uleval Nahtaval');
 }
 
 function laekandidaadid() {

@@ -16,7 +16,10 @@
 </head>
 
 <body onload='lehtLaetud()'>
-	<div class="pealkirjaPaneel">Tahan e-valida</div>
+	<div class="pealkirjaPaneel">
+		<div class="pealkiri">Tahan e-valida</div>
+		<div class="login nupp" onclick="muudaVaadet()"></div>
+	</div>
 
 	<div id="valikud" class='peaPaneel'>
 		<div id="navigatsioon">
@@ -28,9 +31,8 @@
 				onclick="aktiveeriValikuteVaade('tulemused')">Tulemused</div>
 			<div class="navigatsioon nupp statistika"
 				onclick="aktiveeriValikuteVaade('statistika')">Statistika</div>
-			<div class="navigatsioon indikaator">
+			<div class="navigatsioon indikaator"></div>
 		</div>
-	</div>
 
 		<div class="valikutePohipaneel">
 			<div id="uudised" class="valikutePaneel uudised">
@@ -66,6 +68,15 @@
 					<div id="kandidaat" class="statistikapaneel kandidaat">Kandidaat</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="login" class="peaPaneel">
+		Logige sisse kasutades ühte järgmistest võimalustest
+		<div class="login voimalused">
+			<div class="login nupp tuup idkaart" onclick="muudaVaadet()">ID-kaard</div>
+			<div class="login nupp tuup gmail" onclick="muudaVaadet()">Gmail</div>
+			<div class="login nupp tuup facebook" onclick="muudaVaadet()">Facebook</div>
+			<div class="login nupp tuup kulaline" onclick="muudaVaadet()">Külalisena</div>
 		</div>
 	</div>
 </body>

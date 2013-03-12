@@ -3,6 +3,7 @@ body {
 }
 
 div.pealkirjaPaneel {
+	display: table;
 	position: absolute;
 	top: 0px;
 	width: 1000px;
@@ -11,9 +12,29 @@ div.pealkirjaPaneel {
 	margin-left: -500px;
 	font-size: 200%;
 	color: white;
+	vertical-align: middle;
 }
 
+div.login.nupp {
+	background-image: url("../img/login.png");
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	width: 80px;
+	height: 32px;
+	float: right;
+}
+
+div.pealkiri {
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+
+
 div.peaPaneel {
+    -webkit-transition-property: top, -webkit-transform, opacity;
+    -webkit-transition-duration: 0.7s;
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
@@ -25,18 +46,19 @@ div.peaPaneel {
 }
 
 div.peaPaneel.Nahtaval {
-	top: 100px;
-	opacity: 1;
+    top: 100px;
+    -webkit-transform: perspective(1200px) rotateX(0deg);
+    opacity: 1;
 }
-
 div.peaPaneel.All {
-	top: 400px;
-	opacity: 0;
+    top: 400px;
+    -webkit-transform: perspective(1200px) rotateX(-90deg);
+    opacity: 0;
 }
-
 div.peaPaneel.uleval {
-	top: -200px;
-	opacity: 0;
+    top: -200px;
+    -webkit-transform: perspective(1200px) rotateX(90deg);
+    opacity: 0;
 }
 
 div.navigatsioon {
@@ -276,4 +298,43 @@ div.statistikapaneel.partei {
 
 div.statistikapaneel.kandidaat {
 	left: 3000px;
+}
+
+div#login {
+	background-color: lightblue;
+	text-align: center;
+	font-size: 150%;
+}
+
+div.login.voimalused {
+	position: absolute;
+	left: 250px;;
+	top: 50px;
+	width: 500px;
+	height: 500px;
+	background-color: white;
+}
+
+div.login.nupp.tuup {
+	left: 200px;
+	width: 100px;
+	height: 50px;
+	background-image: none;
+	background-color: blue;
+}
+
+div.login.nupp.tuup.idkaart {
+	top: 50px;
+}
+
+div.login.nupp.tuup.gmail {
+	top: 150px;
+}
+
+div.login.nupp.tuup.facebook {
+	top: 250px;
+}
+
+div.login.nupp.tuup.kulaline {
+	top: 350px;
 }
