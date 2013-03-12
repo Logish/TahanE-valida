@@ -1,6 +1,28 @@
+var sisseLogitud = false;
+
+function logi(viis) {
+	if (viis == 'naita') {
+		if (document.getElementById("login").className == 'peaPaneel All') {
+			$('#login').toggleClass('All Nahtaval');
+			$('#valikud').toggleClass('uleval Nahtaval');
+		}
+	} else if (viis == 'valja'){
+		$('#loginInfo').hide();
+		$('#loginNupp').show();
+		aktiveeriValikuteVaade('uudised');
+	} else {
+		sisseLogitud = true;
+		$('#login').toggleClass('All Nahtaval');
+		$('#valikud').toggleClass('uleval Nahtaval');
+		$('#loginNupp').hide();
+		$('#loginInfo').show();		
+	}  
+}
+
 function lehtLaetud() {
-	$('#login').addClass('Nahtaval');
-	$('#valikud').addClass('uleval');
+	$('#loginInfo').hide();
+	$('#login').addClass('All');
+	$('#valikud').addClass('Nahtaval');
 	aktiveeriValikuteVaade('uudised');
 }
 
@@ -13,15 +35,9 @@ function aktiveeriValikuteVaade(nimi) {
 	$('.statistikaPohipaneel').removeClass('riik piirkond partei kandidaat');
 	if (nimi == 'kandidaadid') {
 		laekandidaadid();
-	}
-	else if (nimi == 'statistika') {
+	} else if (nimi == 'statistika') {
 		laestatistika();
 	}
-}
-
-function muudaVaadet() {
-    $('#login').toggleClass('All Nahtaval');
-    $('#valikud').toggleClass('uleval Nahtaval');
 }
 
 function laekandidaadid() {

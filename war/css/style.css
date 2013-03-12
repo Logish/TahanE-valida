@@ -15,17 +15,39 @@ div.pealkirjaPaneel {
 	vertical-align: middle;
 }
 
-div.login.nupp {
-	background-image: url("../img/login.png");
-	position: absolute;
-	right: 35px;
-	top: 35px;
+div.nupp {
+	position: absolute;	
 	width: 80px;
 	height: 32px;
+}
+
+div#loginNupp {
+	background-image: url("../img/login.png");
+	right: 35px;
+	top: 35px;
 	float: right;
 }
 
-div.pealkiri {
+div#loginInfo {
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	float: right;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+}
+
+div#logoutNupp {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: brown;
+	left: 10px;
+	top: 10px;
+}
+
+div#pealkiri {
 	width: 500px;
 	height: 100px;
 	float: left;
@@ -315,7 +337,7 @@ div.login.voimalused {
 	background-color: white;
 }
 
-div.login.nupp.tuup {
+div.nupp.tuup {
 	left: 200px;
 	width: 100px;
 	height: 50px;
@@ -323,18 +345,14 @@ div.login.nupp.tuup {
 	background-color: blue;
 }
 
-div.login.nupp.tuup.idkaart {
+div.nupp.tuup.idkaart {
 	top: 50px;
 }
 
-div.login.nupp.tuup.gmail {
+div.nupp.tuup.gmail {
 	top: 150px;
 }
 
-div.login.nupp.tuup.facebook {
+div.nupp.tuup.facebook {
 	top: 250px;
-}
-
-div.login.nupp.tuup.kulaline {
-	top: 350px;
 }
