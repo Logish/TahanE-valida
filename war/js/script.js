@@ -1,5 +1,11 @@
 var sisseLogitud = false;
 
+$(document).ready(function() 
+	    { 
+	        $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+	    } 
+	); 
+
 function logi(viis) {
 	if (viis == 'naita') {
 		if (document.getElementById("login").className == 'peaPaneel All') {

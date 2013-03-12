@@ -186,6 +186,7 @@ div.valikutePohipaneel.uudised {
 div.valikutePohipaneel.kandidaadid {
 	left: -1000px;
 	background-color: yellow;
+	color: black;
 }
 
 div.valikutePohipaneel.tulemused {
