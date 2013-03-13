@@ -17,6 +17,31 @@ button:hover {
 	background: cornflowerblue;
 }
 
+button#abi {
+	position: absolute;
+	top: 30px;
+	right: 150px;
+	height: 26px;
+    width: 26px;
+    border-radius: 26px;
+    line-height: 1px;
+    background: red;
+}
+
+button#abi:hover {
+	background: tomato;
+}
+
+button#sule {
+	position: absolute;
+	font-weight: bold;
+	top: 10px;
+	right: 10px;
+	height: 20px;
+	width: 20px;
+	line-height: 1px;
+}
+
 div.pealkirjaPaneel {
 	position: absolute;
 	top: 0px;
@@ -84,6 +109,10 @@ button#kandideeriNupp {
 	top: 60px;
 }
 
+button#kandideeriNupp:hover {
+	background: tomato;
+}
+
 div#kasutajaInfo {
 	position: absolute;
 	right: 0px;
@@ -109,7 +138,7 @@ div.peaPaneel {
 	margin-left: -500px;
 	height: 600px;
 	border-top: solid;
-	border-color: white;
+	border-color: black;
 }
 
 div.peaPaneel.Nahtaval {
@@ -147,12 +176,13 @@ div.navigatsioon.nupp {
 div.navigatsioon.nupp:hover {
 	padding-top: 15px;
 	border-bottom: solid;
-	border-color: black;
+	border-color: darkgray;
 }
 
 div.navigatsioon.nupp.aktiivne {
 	padding-top: 15px;
 	font-size: 130%;
+	font-weight: bold;
 }
 
 div.navigatsioon.uudised {
@@ -178,7 +208,7 @@ div.navigatsioon.indikaator {
 	position: absolute;
 	height: 50px;
 	border-bottom: solid;
-	border-color: white;
+	border-color: black;
 	opacity: 0.6;
 	background-color: royalblue;
 	z-index: 1;
@@ -233,6 +263,7 @@ div.valikutePaneel.tulemused {
 
 div.valikutePaneel.statistika {
 	left: 3000px;
+	height: 548px;
 	width: 998px;
 	padding: 0px;
 }
@@ -324,7 +355,7 @@ div.statistikaPohipaneel {
 	position: absolute;
 	top: 50px;
 	width: 3996px;
-	height: 458px;
+	height: 498px;
 }
 
 div.statistikaPohipaneel.riik {
@@ -347,7 +378,7 @@ div.statistikapaneel {
 	position: absolute;
 	width: 958px;
 	padding: 20px;
-	height: 417px;
+	height: 459px;
 	color: black;
 	border-top: 1px solid;
 	overflow: hidden;
@@ -370,7 +401,7 @@ div.statistikapaneel.kandidaat {
 }
 
 div#kandideeri {
-	background-color: orange;
+	background-color: lightblue;
 	text-align: left;
 }
 

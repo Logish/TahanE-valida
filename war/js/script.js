@@ -7,7 +7,6 @@ $(function() {
 	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
 	});
 
-
 function logi(viis) {
 	if (viis == 'naita') {
 		if (document.getElementById("login").className == 'peaPaneel All') {
@@ -27,6 +26,21 @@ function logi(viis) {
 		$('#valikud').toggleClass('uleval Nahtaval');
 		muudaLoginStaatust();
 	}
+}
+
+function sule() {
+	$('#login, #kandideeri').toggleClass('All Nahtaval');
+	$('#valikud').toggleClass('uleval Nahtaval');
+}
+
+function abi() {
+	var left = (screen.width / 2) - 400;
+	window
+			.open(
+					'abi.html',
+					'',
+					'toolbar = no, location = no, directories = no, status = no, menubar = no, scrollbars = no, resizable = no, width = 800, height = 500, top = 200, left='
+							+ left);
 }
 
 function kandideeri() {
