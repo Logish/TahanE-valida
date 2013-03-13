@@ -52,14 +52,7 @@ $(function() {
 				          ] 
        });
        $('#piirkonnastatistikatabel tbody').delegate("tr", "click", rowClick);
-       $("#loader").ajaxStart(function(){
-           $(this).show();
-         });
-
-         $("#loader").ajaxComplete(function(){
-           $(this).hide();
-         }); 
-         $('#parteistatistikatabel').dataTable( {
+       $('#parteistatistikatabel').dataTable( {
      	   	"sAjaxSource": '../js/party.json',
  	        "sAjaxDataProp": "area",
  			"bPaginate": false,
@@ -76,14 +69,7 @@ $(function() {
  				          ] 
         });
         $('#parteistatistikatabel tbody').delegate("tr", "click", rowClick);
-        $("#loader").ajaxStart(function(){
-            $(this).show();
-          });
-
-          $("#loader").ajaxComplete(function(){
-            $(this).hide();
-          }); 
-          $('#kandidaadistatistikatabel').dataTable( {
+        $('#kandidaadistatistikatabel').dataTable( {
       	   	"sAjaxSource": '../js/candidate.json',
   	        "sAjaxDataProp": "area",
   			"bPaginate": false,
@@ -101,13 +87,6 @@ $(function() {
   				          ] 
          });
          $('#kandidaadistatistikatabel tbody').delegate("tr", "click", rowClick);
-         $("#loader").ajaxStart(function(){
-             $(this).show();
-           });
-
-           $("#loader").ajaxComplete(function(){
-             $(this).hide();
-           }); 
 	});
 
 
