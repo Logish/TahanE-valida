@@ -1,10 +1,11 @@
 var sisseLogitud = false;
 
-/*
- * $(function() { $('#kandidaaditabel').dataTable({ "sAjaxSource" :
- * '../js/kandidaadid.json' }); $('#kandidaaditabel tbody').delegate("tr",
- * "click", rowClick); });
- */
+$(function() {
+	   $('#kandidaaditabel').dataTable( {
+	      "sAjaxSource": '../js/kandidaadid.json'
+	   });
+	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+	});
 
 function logi(viis) {
 	if (viis == 'naita') {
