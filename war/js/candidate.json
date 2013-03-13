@@ -1,0 +1,126 @@
+{
+	"candidate" : [ {
+		"party" : {
+			"id" : "REF",
+			"name" : "Eesti Reformierakond"
+		},
+		"person" : {
+			"id" : "37907034620",
+			"name" : "Eduard Ekskavaator"
+		},
+		"votes" : "1562" 
+	}, {
+		"party" : {
+			"id" : "KESK",
+			"name" : "Eesti Keskerakond"
+		},
+		"person" : {
+			"id" : "37907034621",
+			"name" : "Ferdinand Fuksia"
+		},
+		"votes" : "628"
+	}, {
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Gerhard Gategoverdus"
+		},
+		"votes" : "5226"
+	}, {
+		"party" : {
+			"id" : "IRL",
+			"name" : "Isamaa- ja Respublica Liit"
+		},
+		"person" : {
+			"id" : "37907034623",
+			"name" : "Harald Hamster"
+		},
+		"votes" : "89562"
+	}, {
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"person" : {
+			"id" : "37907034624",
+			"name" : "Ildegaard Ilumeel"
+		},
+		"votes" : "7315"
+	}, {
+		"party" : {
+			"id" : "REF",
+			"name" : "Eesti Reformierakond"
+		},
+		"person" : {
+			"id" : "37907034625",
+			"name" : "Janaida Jalutova"
+		},
+		"votes" : "5371"
+	},
+	{
+		"party" : {
+			"id" : "VJP",
+			"name" : "Vasaku Jala Partei"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Eduard Savine"
+		},
+		"votes" : "9000"
+	}, {
+		"party" : {
+			"id" : "VJP",
+			"name" : "Vasaku Jala Partei"
+		},
+		"person" : {
+			"id" : "37907034621",
+			"name" : "Juri Trell"
+		},
+		"votes" : "9001"
+	}, {
+		"party" : {
+			"id" : "VTP",
+			"name" : "Veri, Too ja Pisarad"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Linna Vurle"
+		},
+		"votes" : "9002"
+	}, {
+		"party" : {
+			"id" : "ROH",
+			"name" : "Rohelised"
+		},
+		"person" : {
+			"id" : "37907034623",
+			"name" : "Liina Roheline"
+		},
+		"votes" : "4532"
+	}, {
+		"party" : {
+			"id" : "VTP",
+			"name" : "Veri, Too ja Pisarad"
+		},
+		"person" : {
+			"id" : "37907034624",
+			"name" : "Sven Kulmik"
+		},
+		"votes" : "3442"
+	}, {
+		"party" : {
+			"id" : "ROH",
+			"name" : "Rohelised"
+		},
+		"person" : {
+			"id" : "37907034625",
+			"name" : "Aadam Oun"
+		},
+		"votes" : "567"
+	}
+
+	]
+}

@@ -33,6 +33,81 @@ $(function() {
          $("#loader").ajaxComplete(function(){
            $(this).hide();
          }); 
+       $('#piirkonnastatistikatabel').dataTable( {
+    	   	"sAjaxSource": '../js/area.json',
+	        "sAjaxDataProp": "area",
+			"bPaginate": false,
+			"bLengthChange": false,
+			"bFilter": true,
+			"bSort": true,
+			"bSortable": true,
+			"bInfo": false,
+			"bAutoWidth": true,
+			"sProcessing": "<img src='../img/ajax-loader.gif'",
+			"aoColumns": [
+				         { "mDataProp": "area" },
+				         { "mDataProp": "party.name" },
+				         { "mDataProp": "person.name" },
+				         { "mDataProp": "votes" }
+				          ] 
+       });
+       $('#piirkonnastatistikatabel tbody').delegate("tr", "click", rowClick);
+       $("#loader").ajaxStart(function(){
+           $(this).show();
+         });
+
+         $("#loader").ajaxComplete(function(){
+           $(this).hide();
+         }); 
+         $('#parteistatistikatabel').dataTable( {
+     	   	"sAjaxSource": '../js/party.json',
+ 	        "sAjaxDataProp": "area",
+ 			"bPaginate": false,
+ 			"bLengthChange": false,
+ 			"bFilter": true,
+ 			"bSort": true,
+ 			"bSortable": true,
+ 			"bInfo": false,
+ 			"bAutoWidth": true,
+ 			"sProcessing": "<img src='../img/ajax-loader.gif'",
+ 			"aoColumns": [
+ 				         { "mDataProp": "party.name" },
+ 				         { "mDataProp": "votes" }
+ 				          ] 
+        });
+        $('#parteistatistikatabel tbody').delegate("tr", "click", rowClick);
+        $("#loader").ajaxStart(function(){
+            $(this).show();
+          });
+
+          $("#loader").ajaxComplete(function(){
+            $(this).hide();
+          }); 
+          $('#kandidaadistatistikatabel').dataTable( {
+      	   	"sAjaxSource": '../js/candidate.json',
+  	        "sAjaxDataProp": "area",
+  			"bPaginate": false,
+  			"bLengthChange": false,
+  			"bFilter": true,
+  			"bSort": true,
+  			"bSortable": true,
+  			"bInfo": false,
+  			"bAutoWidth": true,
+  			"sProcessing": "<img src='../img/ajax-loader.gif'",
+  			"aoColumns": [
+  				         { "mDataProp": "party.name" },
+  				         { "mDataProp": "person.name" },
+  				         { "mDataProp": "votes" }
+  				          ] 
+         });
+         $('#kandidaadistatistikatabel tbody').delegate("tr", "click", rowClick);
+         $("#loader").ajaxStart(function(){
+             $(this).show();
+           });
+
+           $("#loader").ajaxComplete(function(){
+             $(this).hide();
+           }); 
 	});
 
 
