@@ -394,3 +394,9 @@ div.logNupp.tuup.gmail {
 div.logNupp.tuup.facebook {
 	top: 250px;
 }
+
+.kandidaaditabel {
+	text-align: center;
+	margin:20px 0px 20px 0px;
+	background-color: lightblue;
+}

@@ -1,10 +1,12 @@
 var sisseLogitud = false;
 
-$(document).ready(function() 
-	    { 
-	        $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
-	    } 
-	); 
+$(function() {
+	   $('#kandidaaditabel').dataTable( {
+	      "sAjaxSource": '../js/kandidaadid.json'
+	   });
+	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+	});
+
 
 function logi(viis) {
 	if (viis == 'naita') {
@@ -87,3 +89,8 @@ function aktiveeriStatistikavaade(nimi) {
 	$('.statistikaPohipaneel').removeClass('riik piirkond partei kandidaat');
 	$('.statistikaPohipaneel').addClass(nimi.value);
 }
+
+
+
+
+
