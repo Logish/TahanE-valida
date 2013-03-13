@@ -191,6 +191,7 @@ div.navigatsioon.uudised {
 
 div.navigatsioon.kandidaadid {
 	left: 250px;
+
 }
 
 div.navigatsioon.tulemused {
@@ -255,6 +256,7 @@ div.valikutepaneel.uudised {
 
 div.valikutePaneel.kandidaadid {
 	left: 1000px;
+	text-align:center;
 }
 
 div.valikutePaneel.tulemused {

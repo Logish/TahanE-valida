@@ -26,6 +26,13 @@ $(function() {
 				
 	   });
 	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+       $("#loader").ajaxStart(function(){
+           $(this).show();
+         });
+
+         $("#loader").ajaxComplete(function(){
+           $(this).hide();
+         }); 
 	});
 
 
