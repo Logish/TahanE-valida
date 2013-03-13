@@ -234,8 +234,7 @@ div.valikutePaneel.tulemused {
 div.valikutePaneel.statistika {
 	left: 3000px;
 	width: 998px;
-	padding-right: 0px;
-	padding-left: 0px;
+	padding: 0px;
 }
 
 div.tabeliRida {
@@ -314,7 +313,9 @@ div.tabeliKiri.piirkond {
 }
 
 select.statistikavalik {
-	left: 50px;
+	position: absolute;
+	left: 457px;
+	top: 15px;
 }
 
 div.statistikaPohipaneel {
@@ -322,8 +323,8 @@ div.statistikaPohipaneel {
 	-webkit-transition-duration: 0.6s;
 	position: absolute;
 	top: 50px;
-	width: 4000px;
-	height: 450px;
+	width: 3996px;
+	height: 458px;
 }
 
 div.statistikaPohipaneel.riik {
@@ -331,24 +332,24 @@ div.statistikaPohipaneel.riik {
 }
 
 div.statistikaPohipaneel.piirkond {
-	left: -1000px;
+	left: -999px;
 }
 
 div.statistikaPohipaneel.partei {
-	left: -2000px;
+	left: -1998px;
 }
 
 div.statistikaPohipaneel.kandidaat {
-	left: -3000px;
+	left: -2997px;
 }
 
 div.statistikapaneel {
 	position: absolute;
-	width: 1000px;
-	height: 498px;
+	width: 958px;
+	padding: 20px;
+	height: 417px;
 	color: black;
 	border-top: 1px solid;
-	border-bottom: 1px solid;
 	overflow: hidden;
 }
 
@@ -357,15 +358,15 @@ div.statistikapaneel.riik {
 }
 
 div.statistikapaneel.piirkond {
-	left: 1000px;
+	left: 999px;
 }
 
 div.statistikapaneel.partei {
-	left: 2000px;
+	left: 1998px;
 }
 
 div.statistikapaneel.kandidaat {
-	left: 3000px;
+	left: 2997px;
 }
 
 div#kandideeri {
