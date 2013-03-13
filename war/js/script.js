@@ -1,11 +1,11 @@
 var sisseLogitud = false;
 
-$(function() {
-	   $('#kandidaaditabel').dataTable( {
-	      "sAjaxSource": '../js/kandidaadid.json'
-	   });
-	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+/*$(function() {
+	$('#kandidaaditabel').dataTable({
+		"sAjaxSource" : '../js/kandidaadid.json'
 	});
+	$('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+});*/
 
 function logi(viis) {
 	if (viis == 'naita') {
@@ -86,31 +86,37 @@ function laestatistika() {
 function aktiveeriStatistikavaade(nimi) {
 	$('.statistikaPohipaneel').removeClass('riik piirkond partei kandidaat');
 	$('.statistikaPohipaneel').addClass(nimi.value);
-$(document).ready(function() {
-	
-	kohustuslik = [ "eesnimi", "perekonnanimi", "kandideerimispiirkond", "erakond" ];
+}
 
-	$("#andmed").submit(function() {
-		for (i = 0; i < kohustuslik.length; i++) {
-			var vali = $('#' + kohustuslik[i]);
-			if (vali.val() == "") {
-				vali.addClass("error");
-				$('#' + kohustuslik[i] + 'Info').text('See väli on kohustuslik.')
-			} else {
-				vali.removeClass("error");
-			}
-		}
+$(document).ready(
+		function() {
 
-		if ($(":input").hasClass("error")) {
-			return false;
-		} else {
-			return true;
-		}
-	});
+			kohustuslik = [ "eesnimi", "perekonnanimi",
+					"kandideerimispiirkond", "erakond" ];
 
-	$(":input").focus(function() {
-		if ($(this).hasClass("error")) {
-			$(this).removeClass("error");
-		}
-	});
-});
+			$("#andmed").submit(
+					function() {
+						for (i = 0; i < kohustuslik.length; i++) {
+							var vali = $('#' + kohustuslik[i]);
+							if (vali.val() == "") {
+								vali.addClass("error");
+								$('#' + kohustuslik[i] + 'Info').text(
+										'See väli on kohustuslik.')
+							} else {
+								vali.removeClass("error");
+							}
+						}
+
+						if ($(":input").hasClass("error")) {
+							return false;
+						} else {
+							return true;
+						}
+					});
+
+			$(":input").focus(function() {
+				if ($(this).hasClass("error")) {
+					$(this).removeClass("error");
+				}
+			});
+		});

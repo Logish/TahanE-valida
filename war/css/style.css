@@ -195,30 +195,28 @@ div.valikutePohipaneel {
 
 div.valikutePohipaneel.uudised {
 	left: 0px;
-	background-color: red;
 }
 
 div.valikutePohipaneel.kandidaadid {
 	left: -1000px;
-	background-color: yellow;
-	color: black;
 }
 
 div.valikutePohipaneel.tulemused {
 	left: -2000px;
-	background-color: blue;
 }
 
 div.valikutePohipaneel.statistika {
 	left: -3000px;
-	background-color: green;
 }
 
 div.valikutePaneel {
 	position: absolute;
-	width: 1000px;
-	height: 550px;
+	width: 958px;
+	height: 508px;
 	padding: 20px;
+	border: 1px solid;
+	background-color: white;
+	color: black;
 }
 
 div.valikutepaneel.uudised {
@@ -229,12 +227,15 @@ div.valikutePaneel.kandidaadid {
 	left: 1000px;
 }
 
-div.valikutepaneel.tulemused {
+div.valikutePaneel.tulemused {
 	left: 2000px;
 }
 
 div.valikutePaneel.statistika {
 	left: 3000px;
+	width: 998px;
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 div.tabeliRida {
@@ -343,12 +344,11 @@ div.statistikaPohipaneel.kandidaat {
 
 div.statistikapaneel {
 	position: absolute;
-	width: 900px;
-	height: 400px;
-	padding: 20px;
-	margin: 20px;
-	background-color: purple;
+	width: 1000px;
+	height: 498px;
 	color: black;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 	overflow: hidden;
 }
 
