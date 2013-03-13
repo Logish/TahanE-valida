@@ -1,10 +1,10 @@
 var sisseLogitud = false;
 
-$(document).ready(function() 
-	    { 
-	        $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} ); 
-	    } 
-	); 
+$(document).ready(function() {
+	$("#myTable").tablesorter({
+		sortList : [ [ 0, 0 ], [ 1, 0 ] ]
+	});
+});
 
 function logi(viis) {
 	if (viis == 'naita') {
@@ -12,19 +12,19 @@ function logi(viis) {
 			$('#login, #kandideeri').toggleClass('All Nahtaval');
 			$('#valikud').toggleClass('uleval Nahtaval');
 		}
-	} else if (viis == 'valja'){
+	} else if (viis == 'valja') {
 		muudaLoginStaatust();
 		aktiveeriValikuteVaade('uudised');
 		if (document.getElementById("login").className == 'peaPaneel Nahtaval') {
 			$('#login, #kandideeri').toggleClass('All Nahtaval');
 			$('#valikud').toggleClass('uleval Nahtaval');
 		}
-		
+
 	} else {
 		$('#login, #kandideeri').toggleClass('All Nahtaval');
 		$('#valikud').toggleClass('uleval Nahtaval');
-		muudaLoginStaatust();		
-	}  
+		muudaLoginStaatust();
+	}
 }
 
 function kandideeri() {
@@ -42,7 +42,7 @@ function muudaLoginStaatust() {
 	} else {
 		sisseLogitud = true;
 		$('.loginPais').toggleClass('sees valjas')
-		$('#login, #kandideeri').toggle();		
+		$('#login, #kandideeri').toggle();
 	}
 }
 
@@ -70,13 +70,12 @@ function aktiveeriValikuteVaade(nimi) {
 
 function laekandidaadid() {
 	$('#uudised').children('.tabeliRida').not('.pais').remove();
-/*	$.getJSON('uudised.json', function(data) {
-		$('#uudised').children('.tabeliRida').not('.pais').hover(function() {
-			$(this).children('.tabelireaTaust').addClass('hiirPeal');
-		}, function() {
-			$(this).children('.tabelireaTaust').removeClass('hiirPeal');
-		});
-	});*/
+	/*
+	 * $.getJSON('uudised.json', function(data) {
+	 * $('#uudised').children('.tabeliRida').not('.pais').hover(function() {
+	 * $(this).children('.tabelireaTaust').addClass('hiirPeal'); }, function() {
+	 * $(this).children('.tabelireaTaust').removeClass('hiirPeal'); }); });
+	 */
 }
 
 function laestatistika() {
@@ -87,3 +86,32 @@ function aktiveeriStatistikavaade(nimi) {
 	$('.statistikaPohipaneel').removeClass('riik piirkond partei kandidaat');
 	$('.statistikaPohipaneel').addClass(nimi.value);
 }
+
+$(document).ready(function() {
+	
+	kohustuslik = [ "eesnimi", "perekonnanimi", "kandideerimispiirkond", "erakond" ];
+
+	$("#andmed").submit(function() {
+		for (i = 0; i < kohustuslik.length; i++) {
+			var vali = $('#' + kohustuslik[i]);
+			if (vali.val() == "") {
+				vali.addClass("error");
+				$('#' + kohustuslik[i] + 'Info').text('See väli on kohustuslik.')
+			} else {
+				vali.removeClass("error");
+			}
+		}
+
+		if ($(":input").hasClass("error")) {
+			return false;
+		} else {
+			return true;
+		}
+	});
+
+	$(":input").focus(function() {
+		if ($(this).hasClass("error")) {
+			$(this).removeClass("error");
+		}
+	});
+});

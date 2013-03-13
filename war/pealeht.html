@@ -23,12 +23,16 @@
 
 		<div class="login pais">
 			<div class="loginPais sees">
-				<div id="userInfo"></div>
-				<div id="logoutNupp" class="logNupp" onclick="logi('valja')"></div>
-				<button onClick="kandideeri()">Kandideeri</button>
+				<div id="kasutajaInfo">
+					<p id="nimi">Eesnimi Perekonnanimi</p>
+				</div>
+				<button id="logoutNupp" class="logNupp" onclick="logi('valja')">Logi
+					Välja</button>
+				<button id="kandideeriNupp" onClick="kandideeri()">Kandideeri</button>
 			</div>
 			<div class="loginPais valjas">
-				<div id="loginNupp" class="logNupp" onclick="logi('naita')"></div>
+				<button id="loginNupp" class="logNupp" onclick="logi('naita')">Logi
+					Sisse</button>
 			</div>
 		</div>
 	</div>
@@ -126,20 +130,40 @@
 		</div>
 	</div>
 	<div id="login" class="peaPaneel">
-		Logige sisse kasutades ühte järgmistest võimalustest
 		<div class="login voimalused">
-			<div class="logNupp tuup idkaart" onclick="logi('idkaart')">ID-kaart</div>
-			<div class="logNupp tuup gmail" onclick="logi('gmail')">Gmail</div>
-			<div class="logNupp tuup facebook" onclick="logi('facebook')">Facebook</div>
+			Logige sisse kasutades ühte järgmistest võimalustest
+			<button class="logNupp tuup idkaart" onclick="logi('idkaart')">ID-kaart</button>
+			<button class="logNupp tuup gmail" onclick="logi('gmail')">Gmail</button>
+			<button class="logNupp tuup facebook" onclick="logi('facebook')">Facebook</button>
 		</div>
 	</div>
 	<div id="kandideeri" class="peaPaneel">
-		<form>
-			Eesnimi: <input type="text" name="eesnimi"><br>
-			Perekonnanimi: <input type="text" name="perekonnanimi"><br>
-			Piirkond: <input type="text" name="piirkond"><br>
-			Erakond: <input type="text" name="erakond"><br>
-		</form>
+		<div id="andmeKonteiner">
+			<h1>Kandideerimine</h1>
+			<form method="post" id="andmed" action="">
+				<div>
+					<label for="eesnimi">Eesnimi</label> <input id="eesnimi"
+						name="eesnimi" type="text" /> <span id="eesnimiInfo"></span>
+				</div>
+				<div>
+					<label for="perekonnanimi">Perekonnanimi</label> <input
+						id="perekonnanimi" name="perekonnanimi" type="text" /> <span
+						id="perekonnanimiInfo"></span>
+				</div>
+				<div>
+					<label for="kandideerimispiirkond">Piirkond</label> <input
+						id="kandideerimispiirkond" name="kandideerimispiirkond"
+						type="text" /> <span id="kandideerimispiirkondInfo"></span>
+				</div>
+				<div>
+					<label for="erakond">Erakond</label> <input id="erakond"
+						name="erakond" type="text" /> <span id="erakondInfo"></span>
+				</div>
+				<div>
+					<input id="send" name="send" type="submit" value="Kandideeri" />
+				</div>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

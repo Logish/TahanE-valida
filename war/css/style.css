@@ -1,5 +1,20 @@
 body {
-	background-color: black;
+	background-color: lightcyan;
+}
+
+button {
+	background: royalblue;
+	color: white;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+	width: 100px;
+	padding: 5px;
+	font-size: 13px;
+}
+
+button:hover {
+	background: cornflowerblue;
 }
 
 div.pealkirjaPaneel {
@@ -9,12 +24,11 @@ div.pealkirjaPaneel {
 	height: 100px;
 	left: 50%;
 	margin-left: -500px;
-	font-size: 200%;
-	color: white;
 	overflow: hidden;
 }
 
 div#pealkiri {
+	font-size: 200%;
 	width: 500px;
 	height: 100px;
 	float: left;
@@ -27,6 +41,7 @@ div.login.pais {
 	right: 0px;
 	width: 500px;
 	height: 200px;
+	text-align: right;
 }
 
 div.login.pais.valjas {
@@ -43,7 +58,6 @@ div.loginPais.valjas {
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	background-color: orange;
 	height: 100px;
 }
 
@@ -52,42 +66,42 @@ div.loginPais.sees {
 	position: absolute;
 	right: 0px;
 	top: 100px;
-	background-color: brown;
 	height: 100px;
 }
 
-div.logNupp {
-	position: absolute;	
+button.logNupp {
+	position: absolute;
 	right: 30px;
 	top: 30px;
-	width: 80px;
-	height: 32px;
 	float: right;
+	
 }
 
-div#loginNupp {
-	background-image: url("../img/login.png");
-	float: right;
-}
-
-div#logoutNupp {
-	background-image: url("../img/logout.png");
-	float: right;
-}
-
-div#loginInfo {
+button#kandideeriNupp {
+	background-color: red;
 	position: absolute;
-	right: 35px;
-	top: 35px;
-	float: right;
-	width: 50px;
-	height: 50px;
-	background-color: white;
+	right: 30px;
+	top: 60px;
+}
+
+div#kasutajaInfo {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 500px;
+	height: 100px;
+}
+
+p#nimi {
+	position: absolute;
+	right: 30px;
+	top: 0px;
+	margin: 5px;
 }
 
 div.peaPaneel {
-    -webkit-transition-property: top, -webkit-transform, opacity;
-    -webkit-transition-duration: 0.7s;
+	-webkit-transition-property: top, -webkit-transform, opacity;
+	-webkit-transition-duration: 0.7s;
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
@@ -99,19 +113,21 @@ div.peaPaneel {
 }
 
 div.peaPaneel.Nahtaval {
-    top: 100px;
-    -webkit-transform: perspective(1200px) rotateX(0deg);
-    opacity: 1;
+	top: 100px;
+	-webkit-transform: perspective(1200px) rotateX(0deg);
+	opacity: 1;
 }
+
 div.peaPaneel.All {
-    top: 400px;
-    -webkit-transform: perspective(1200px) rotateX(-90deg);
-    opacity: 0;
+	top: 400px;
+	-webkit-transform: perspective(1200px) rotateX(-90deg);
+	opacity: 0;
 }
+
 div.peaPaneel.uleval {
-    top: -200px;
-    -webkit-transform: perspective(1200px) rotateX(90deg);
-    opacity: 0;
+	top: -200px;
+	-webkit-transform: perspective(1200px) rotateX(90deg);
+	opacity: 0;
 }
 
 div.navigatsioon {
@@ -124,7 +140,6 @@ div.navigatsioon.nupp {
 	z-index: 2;
 	position: absolute;
 	height: 35px;
-	color: white;
 	padding-top: 3px;
 	text-align: center;
 }
@@ -132,7 +147,7 @@ div.navigatsioon.nupp {
 div.navigatsioon.nupp:hover {
 	padding-top: 15px;
 	border-bottom: solid;
-	border-color: white;
+	border-color: black;
 }
 
 div.navigatsioon.nupp.aktiivne {
@@ -158,13 +173,14 @@ div.navigatsioon.statistika {
 
 div.navigatsioon.indikaator {
 	-webkit-transition-property: left;
-	-webkit-transition-duration: 0.6s; z-index : 1;
+	-webkit-transition-duration: 0.6s;
+	z-index: 1;
 	position: absolute;
 	height: 50px;
 	border-bottom: solid;
 	border-color: white;
 	opacity: 0.6;
-	background-color: #004872;
+	background-color: royalblue;
 	z-index: 1;
 }
 
@@ -174,7 +190,6 @@ div.valikutePohipaneel {
 	position: absolute;
 	top: 50px;
 	width: 4000px;
-	color: white;
 	height: 550px;
 }
 
@@ -250,7 +265,6 @@ div.tabelireaTaust.hiirPeal {
 }
 
 div.tabelireaTaust.pais {
-	color: white;
 	opacity: 0.4;
 	height: 40px;
 }
@@ -269,7 +283,8 @@ div.tabeliKiri {
 
 div.tabeliKiri.pais {
 	-webkit-transition-property: height border;
-	-webkit-transition-duration: 0.35s; font-size : 125%;
+	-webkit-transition-duration: 0.35s;
+	font-size: 125%;
 	letter-spacing: 2px;
 	padding-top: 10px;
 	font-size: 125%;
@@ -308,7 +323,6 @@ div.statistikaPohipaneel {
 	top: 50px;
 	width: 4000px;
 	height: 450px;
-	
 }
 
 div.statistikaPohipaneel.riik {
@@ -355,9 +369,8 @@ div.statistikapaneel.kandidaat {
 }
 
 div#kandideeri {
-	background-color: lightblue;
-	text-align: center;
-	font-size: 150%;
+	background-color: orange;
+	text-align: left;
 }
 
 div#login {
@@ -372,25 +385,81 @@ div.login.voimalused {
 	top: 50px;
 	width: 500px;
 	height: 500px;
-	background-color: white;
 }
 
-div.logNupp.tuup {
+button.logNupp.tuup {
 	left: 200px;
-	width: 100px;
-	height: 50px;
-	background-image: none;
-	background-color: blue;
 }
 
-div.logNupp.tuup.idkaart {
+button.logNupp.tuup.idkaart {
 	top: 50px;
 }
 
-div.logNupp.tuup.gmail {
+button.logNupp.tuup.gmail {
+	top: 100px;
+}
+
+button.logNupp.tuup.facebook {
 	top: 150px;
 }
 
-div.logNupp.tuup.facebook {
-	top: 250px;
+h1 {
+	font-weight: bold;
+	font-size: 20px;
+	border-bottom: 1px dotted black;
+	color: royalblue;
+	margin-bottom: 1em;
+}
+
+#andmeKonteiner {
+	width: 600px;
+	margin: 40px auto;
+	text-align: left;
+}
+
+#andmed {
+	padding: 10px;
+}
+
+#andmed label {
+	display: block;
+	color: gray;
+	font-weight: bold;
+}
+
+#andmed input {
+	width: 200px;
+	padding: 5px;
+	font-size: 13px;
+	border: 1px solid lightgray;
+}
+
+#andmed input.error {
+	background: pink;
+	border-color: tomato;
+}
+
+#andmed div {
+	margin-bottom: 15px;
+}
+
+#andmed span {
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 13px;
+	color: tomato;
+}
+
+#andmed #send {
+	background: royalblue;
+	width: 100px;
+	color: white;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+#andmed #send:hover {
+	background: cornflowerblue;
 }
