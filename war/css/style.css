@@ -463,3 +463,9 @@ h1 {
 #andmed #send:hover {
 	background: cornflowerblue;
 }
+
+.kandidaaditabel {
+	text-align: center;
+	margin:20px 0px 20px 0px;
+	background-color: lightblue;
+}
