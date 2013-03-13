@@ -2,10 +2,25 @@ var sisseLogitud = false;
 
 $(function() {
 	   $('#kandidaaditabel').dataTable( {
-	      "sAjaxSource": '../js/kandidaadid.json'
+	      "sAjaxSource": '../js/candidates.json',
+	      "sAjaxDataProp": "candidates",
+			"bPaginate": false,
+			"bLengthChange": false,
+			"bFilter": true,
+			"bSort": true,
+			"bInfo": false,
+			"bAutoWidth": true,
+			"sProcessing": "<img src='../img/ajax-loader.gif'",
+			"aoColumns": [
+				         { "mDataProp": "id" },
+				         { "mDataProp": "party.name" },
+				         { "mDataProp": "person.name" }
+				          ]
+				
 	   });
 	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
 	});
+
 
 function logi(viis) {
 	if (viis == 'naita') {
