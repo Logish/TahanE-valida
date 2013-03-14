@@ -25,7 +25,7 @@ $(function() {
 
 				
 	   });
-	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+	   /*$('#kandidaaditabel tbody').delegate("tr", "click", rowClick);*/
        $("#loader").ajaxStart(function(){
            $(this).show();
          });
@@ -51,7 +51,7 @@ $(function() {
 				         { "mDataProp": "votes" }
 				          ] 
        });
-       $('#piirkonnastatistikatabel tbody').delegate("tr", "click", rowClick);
+       /*$('#piirkonnastatistikatabel tbody').delegate("tr", "click", rowClick);*/
        $('#parteistatistikatabel').dataTable( {
      	   	"sAjaxSource": '../js/party.json',
  	        "sAjaxDataProp": "area",
@@ -68,7 +68,7 @@ $(function() {
  				         { "mDataProp": "votes" }
  				          ] 
         });
-        $('#parteistatistikatabel tbody').delegate("tr", "click", rowClick);
+        /*$('#parteistatistikatabel tbody').delegate("tr", "click", rowClick);*/
         $('#kandidaadistatistikatabel').dataTable( {
       	   	"sAjaxSource": '../js/candidate.json',
   	        "sAjaxDataProp": "area",
@@ -86,7 +86,7 @@ $(function() {
   				         { "mDataProp": "votes" }
   				          ] 
          });
-         $('#kandidaadistatistikatabel tbody').delegate("tr", "click", rowClick);
+         /*$('#kandidaadistatistikatabel tbody').delegate("tr", "click", rowClick);*/
 	});
 
 
