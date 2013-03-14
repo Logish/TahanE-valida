@@ -1,13 +1,19 @@
 var sisseLogitud = false;
 
+
+
+
+
+
 $(function() {
 	   $('#kandidaaditabel').dataTable( {
-	      "sAjaxSource": '../js/candidates.json',
-	      "sAjaxDataProp": "candidates",
+	        "sAjaxSource": '../js/candidates.json',
+	        "sAjaxDataProp": "candidates",
 			"bPaginate": false,
 			"bLengthChange": false,
 			"bFilter": true,
 			"bSort": true,
+			"bSortable": true,
 			"bInfo": false,
 			"bAutoWidth": true,
 			"sProcessing": "<img src='../img/ajax-loader.gif'",
@@ -16,9 +22,71 @@ $(function() {
 				         { "mDataProp": "party.name" },
 				         { "mDataProp": "person.name" }
 				          ]
+
 				
 	   });
 	   $('#kandidaaditabel tbody').delegate("tr", "click", rowClick);
+       $("#loader").ajaxStart(function(){
+           $(this).show();
+         });
+
+         $("#loader").ajaxComplete(function(){
+           $(this).hide();
+         }); 
+       $('#piirkonnastatistikatabel').dataTable( {
+    	   	"sAjaxSource": '../js/area.json',
+	        "sAjaxDataProp": "area",
+			"bPaginate": false,
+			"bLengthChange": false,
+			"bFilter": true,
+			"bSort": true,
+			"bSortable": true,
+			"bInfo": false,
+			"bAutoWidth": true,
+			"sProcessing": "<img src='../img/ajax-loader.gif'",
+			"aoColumns": [
+				         { "mDataProp": "area" },
+				         { "mDataProp": "party.name" },
+				         { "mDataProp": "person.name" },
+				         { "mDataProp": "votes" }
+				          ] 
+       });
+       $('#piirkonnastatistikatabel tbody').delegate("tr", "click", rowClick);
+       $('#parteistatistikatabel').dataTable( {
+     	   	"sAjaxSource": '../js/party.json',
+ 	        "sAjaxDataProp": "area",
+ 			"bPaginate": false,
+ 			"bLengthChange": false,
+ 			"bFilter": true,
+ 			"bSort": true,
+ 			"bSortable": true,
+ 			"bInfo": false,
+ 			"bAutoWidth": true,
+ 			"sProcessing": "<img src='../img/ajax-loader.gif'",
+ 			"aoColumns": [
+ 				         { "mDataProp": "party.name" },
+ 				         { "mDataProp": "votes" }
+ 				          ] 
+        });
+        $('#parteistatistikatabel tbody').delegate("tr", "click", rowClick);
+        $('#kandidaadistatistikatabel').dataTable( {
+      	   	"sAjaxSource": '../js/candidate.json',
+  	        "sAjaxDataProp": "area",
+  			"bPaginate": false,
+  			"bLengthChange": false,
+  			"bFilter": true,
+  			"bSort": true,
+  			"bSortable": true,
+  			"bInfo": false,
+  			"bAutoWidth": true,
+  			"sProcessing": "<img src='../img/ajax-loader.gif'",
+  			"aoColumns": [
+  				         { "mDataProp": "party.name" },
+  				         { "mDataProp": "person.name" },
+  				         { "mDataProp": "votes" }
+  				          ] 
+         });
+         $('#kandidaadistatistikatabel tbody').delegate("tr", "click", rowClick);
 	});
 
 

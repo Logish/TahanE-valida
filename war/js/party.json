@@ -1,0 +1,54 @@
+{
+	"party" : [ {
+		"party" : {
+			"id" : "REF",
+			"name" : "Eesti Reformierakond"
+		},
+		"votes" : "1562" 
+	}, {
+		"area" : "Jõgevamaa",
+		"party" : {
+			"id" : "KESK",
+			"name" : "Eesti Keskerakond"
+		},
+		"votes" : "628"
+	}, {
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"votes" : "5226"
+	}, {
+		"party" : {
+			"id" : "IRL",
+			"name" : "Isamaa- ja Respublica Liit"
+		},
+		"votes" : "89562"
+	}, {
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"votes" : "7315"
+	}, {
+		"party" : {
+			"id" : "VJP",
+			"name" : "Vasaku Jala Partei"
+		},
+		"votes" : "9000"
+	}, {
+		"party" : {
+			"id" : "VTP",
+			"name" : "Veri, Too ja Pisarad"
+		},
+		"votes" : "9002"
+	}, {
+		"party" : {
+			"id" : "ROH",
+			"name" : "Rohelised"
+		},
+		"votes" : "4532"
+	}
+
+	]
+}

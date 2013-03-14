@@ -1,0 +1,138 @@
+{
+	"area" : [ {
+		"area" : "Harjumaa",
+		"party" : {
+			"id" : "REF",
+			"name" : "Eesti Reformierakond"
+		},
+		"person" : {
+			"id" : "37907034620",
+			"name" : "Eduard Ekskavaator"
+		},
+		"votes" : "1562" 
+	}, {
+		"area" : "Jıgevamaa",
+		"party" : {
+			"id" : "KESK",
+			"name" : "Eesti Keskerakond"
+		},
+		"person" : {
+			"id" : "37907034621",
+			"name" : "Ferdinand Fuksia"
+		},
+		"votes" : "628"
+	}, {
+		"area" : "Vırumaa",
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Gerhard Gategoverdus"
+		},
+		"votes" : "5226"
+	}, {
+		"area" : "Tartumaa",
+		"party" : {
+			"id" : "IRL",
+			"name" : "Isamaa- ja Respublica Liit"
+		},
+		"person" : {
+			"id" : "37907034623",
+			"name" : "Harald Hamster"
+		},
+		"votes" : "89562"
+	}, {
+		"area" : "L‰‰ne-Virumaa",
+		"party" : {
+			"id" : "SDE",
+			"name" : "Sotsiaaldemokraatlik erakond"
+		},
+		"person" : {
+			"id" : "37907034624",
+			"name" : "Ildegaard Ilumeel"
+		},
+		"votes" : "7315"
+	}, {
+		"area" : "P‰rnumaa",
+		"party" : {
+			"id" : "REF",
+			"name" : "Eesti Reformierakond"
+		},
+		"person" : {
+			"id" : "37907034625",
+			"name" : "Janaida Jalutova"
+		},
+		"votes" : "5371"
+	},
+	{
+		"area" : "Tartumaa",
+		"party" : {
+			"id" : "VJP",
+			"name" : "Vasaku Jala Partei"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Eduard Savine"
+		},
+		"votes" : "9000"
+	}, {
+		"area" : "Tartumaa",
+		"party" : {
+			"id" : "VJP",
+			"name" : "Vasaku Jala Partei"
+		},
+		"person" : {
+			"id" : "37907034621",
+			"name" : "Juri Trell"
+		},
+		"votes" : "9001"
+	}, {
+		"area" : "P‰rnumaa",
+		"party" : {
+			"id" : "VTP",
+			"name" : "Veri, Too ja Pisarad"
+		},
+		"person" : {
+			"id" : "37907034622",
+			"name" : "Linna Vurle"
+		},
+		"votes" : "9002"
+	}, {
+		"area" : "Pılvamaa",
+		"party" : {
+			"id" : "ROH",
+			"name" : "Rohelised"
+		},
+		"person" : {
+			"id" : "37907034623",
+			"name" : "Liina Roheline"
+		},
+		"votes" : "4532"
+	}, {
+		"area" : "Tartumaa",
+		"party" : {
+			"id" : "VTP",
+			"name" : "Veri, Too ja Pisarad"
+		},
+		"person" : {
+			"id" : "37907034624",
+			"name" : "Sven Kulmik"
+		},
+		"votes" : "3442"
+	}, {
+		"area" : "Vırumaa",
+		"party" : {
+			"id" : "ROH",
+			"name" : "Rohelised"
+		},
+		"person" : {
+			"id" : "37907034625",
+			"name" : "Aadam Oun"
+		},
+		"votes" : "567"
+	}
+
+	]
+}

@@ -191,6 +191,7 @@ div.navigatsioon.uudised {
 
 div.navigatsioon.kandidaadid {
 	left: 250px;
+
 }
 
 div.navigatsioon.tulemused {
@@ -256,6 +257,7 @@ div.valikutepaneel.uudised {
 
 div.valikutePaneel.kandidaadid {
 	left: 1000px;
+	text-align:center;
 }
 
 div.valikutePaneel.tulemused {
@@ -498,9 +500,12 @@ h1 {
 }
 
 .kandidaaditabel {
+	rowspan:1;
+	colspan:1;
 	text-align: center;
 	margin:20px 0px 20px 0px;
 	background-color: lightblue;
+	
 }
 
 #loader {
@@ -514,4 +519,17 @@ h1 {
     margin-left: -32px; 
     margin-top: -32px; 
     display: block;     
+}
+
+table.display thead th div.DataTables_sort_wrapper {
+    position: relative;
+    padding-right: 20px;
+    padding-right: 20px;
+}
+ 
+table.display thead th div.DataTables_sort_wrapper span {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 0;
 }

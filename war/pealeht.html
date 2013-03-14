@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="../css/style.css" type="text/css">
 <link rel="stylesheet" href="../war/css/style_print.css" type="text/css">
 <link rel="stylesheet" href="../css/style_print.css" type="text/css">
+<link rel="stylesheet" href="../war/css/demo_table_jui.css" type="text/css">
+<link rel="stylesheet" href="../css/demo_table_jui.css" type="text/css">
 <script type="text/javascript" src='../war/js/jquery-1.9.1.js'></script>
 <script type="text/javascript" src='../js/jquery-1.9.1.js'></script>
 <script type="text/javascript" src='../war/js/script.js'></script>
@@ -70,8 +72,7 @@
 						<div class="tabeliKiri piirkond pais">Piirkond</div>
 					</div>
 				</div>  -->
-
-				<table id="kandidaaditabel" class="kandidaaditabel">
+				<table id="kandidaaditabel" class="display">
 					<thead>
 						<tr>
 							<th>ID</th>
@@ -82,7 +83,8 @@
 					<tbody>
 					</tbody>
 				</table>
-				
+				<br />
+				<button type="button"  onclick="alert('Hääletatud')">Hääleta</button>
 				
 			</div>
 			<div id="tulemused" class="valikutePaneel tulemused">Tulemused</div>
@@ -95,10 +97,49 @@
 					<option value="kandidaat">Kandidaat</option>
 				</select>
 				<div class="statistikaPohipaneel">
-					<div id="riik" class="statistikapaneel riik">Riik</div>
-					<div id="piirkond" class="statistikapaneel piirkond">Piirkond</div>
-					<div id="partei" class="statistikapaneel partei">Partei</div>
-					<div id="kandidaat" class="statistikapaneel kandidaat">Kandidaat</div>
+					<div id="riik" class="statistikapaneel riik"></div>
+					<div id="piirkond" class="statistikapaneel piirkond">
+						<table id="piirkonnastatistikatabel" class="display">
+							<thead>
+								<tr>
+									<th>Piirkond</th>
+									<th>Erakond</th>
+									<th>Nimi</th>
+									<th>Hääli</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<br />
+					</div>
+					<div id="partei" class="statistikapaneel partei">
+					<table id="parteistatistikatabel" class="display">
+							<thead>
+								<tr>
+									<th>Erakond</th>
+									<th>Hääli</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<br />
+					</div>
+					<div id="kandidaat" class="statistikapaneel kandidaat">
+					<table id="kandidaadistatistikatabel" class="display">
+							<thead>
+								<tr>
+									<th>Erakond</th>
+									<th>Nimi</th>
+									<th>Hääli</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<br />
+					</div>
 				</div>
 			</div>
 		</div>
