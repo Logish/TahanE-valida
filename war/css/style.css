@@ -176,7 +176,7 @@ div.navigatsioon.nupp {
 div.navigatsioon.nupp:hover {
 	padding-top: 15px;
 	border-bottom: solid;
-	border-color: darkgray;
+	border-color: black;
 }
 
 div.navigatsioon.nupp.aktiivne {
@@ -209,6 +209,7 @@ div.navigatsioon.indikaator {
 	height: 50px;
 	border-bottom: solid;
 	border-color: black;
+	border-opacity: 1;
 	opacity: 0.6;
 	background-color: royalblue;
 	z-index: 1;
