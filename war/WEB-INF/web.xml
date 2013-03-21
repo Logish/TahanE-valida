@@ -18,17 +18,8 @@
   </servlet-mapping>
   
   <servlet>
-  	<servlet-name>Servlet</servlet-name>
-  	<servlet-class>servlets.Servlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>Servlet</servlet-name>
-  	<url-pattern>/test</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
   	<servlet-name>Kandideeri</servlet-name>
-  	<servlet-class>servlets.Kandideeri</servlet-class>
+  	<servlet-class>servlets.KandideeriServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Kandideeri</servlet-name>
